@@ -1,0 +1,23 @@
+<input type="number" placeholder="duration of animation" #durationInput>
+<button (click)="setDuration(durationInput.value)">set duration</button>
+
+<input type="text" placeholder="background color" #backgroundColorInput>
+<button (click)="setColor(backgroundColorInput.value)">set color</button>
+
+<br>
+<p appHighlight={{chosenColor}} appSetduration={{yourChoice}}>testa bakgrundsfärg </p>
+<br>
+<p appHighlight={{chosenColor}} appSetduration={{yourChoice}}>testa bakgrundsfärd </p>
+
+
+<br><br><br>
+
+<input type="text" placeholder="add new todo" #input>
+<button (click)="saveNewTodo(input.value)" >Save</button>
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+<app-savetodo (saveTodo)="updateTodoList($event)" ></app-savetodo>
+
+<app-todo (deleteTodo)="deleteTodoFromList($event)"  *ngFor="let todo of myTodosList" [todo]="todo"></app-todo>
